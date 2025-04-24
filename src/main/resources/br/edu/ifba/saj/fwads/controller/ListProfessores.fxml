@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="523.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.saj.fwads.controller.ListProfessoresController">
+   <children>
+      <FlowPane>
+         <children>
+            <TableView fx:id="tabelaProfessores" prefHeight="418.0" prefWidth="523.0">
+              <columns>
+                <TableColumn fx:id="columnProfessores" prefWidth="113.0" text="Professores" />
+                <TableColumn fx:id="columnNascimento" minWidth="0.0" prefWidth="92.0" text="Nascimento" />
+                  <TableColumn fx:id="columnIdentificacao" prefWidth="122.0" text="Identificação" />
+                  <TableColumn fx:id="columnCPF" prefWidth="101.0" text="CPF" />
+                  <TableColumn fx:id="columnTempoCarreira" prefWidth="94.0" text="Carreira / anos" />
+              </columns>
+            </TableView>
+         </children>
+      </FlowPane>
+      <Button layoutX="234.0" layoutY="441.0" mnemonicParsing="false" onAction="#showNovoProfessor" style="-fx-background-color: green; -fx-text-fill: white;" text="Cadastrar Novo Professor" />
+      <Button layoutX="393.0" layoutY="441.0" mnemonicParsing="false" onAction="#removerProfessor" style="-fx-background-color: red; -fx-text-fill: white;" text="Remover Professor" />
+   </children>
+</AnchorPane>

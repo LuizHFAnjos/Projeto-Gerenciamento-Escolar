@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="159.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.saj.fwads.controller.CadCursoController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Curso" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <TextField fx:id="txCurso" layoutX="14.0" layoutY="32.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <Label layoutX="14.0" layoutY="58.0" text="Duração do Curso(ANOS)" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <TextField fx:id="txDuracao" layoutX="14.0" layoutY="76.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <Button defaultButton="true" layoutX="159.0" layoutY="223.0" mnemonicParsing="false" onAction="#salvarCurso" text="Salvar" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="83.0" />
+      <Button fx:id="idCancelar" cancelButton="true" layoutX="224.0" layoutY="220.0" mnemonicParsing="false" onAction="#closeWindow" text="Cancelar" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+   </children>
+</AnchorPane>

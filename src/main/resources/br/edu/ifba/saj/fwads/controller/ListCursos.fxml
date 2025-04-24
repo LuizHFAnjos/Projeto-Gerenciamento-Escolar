@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="523.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.saj.fwads.controller.ListCursosController">
+   <children>
+      <TableView fx:id="tabelaCursos" prefHeight="418.0" prefWidth="523.0">
+        <columns>
+          <TableColumn fx:id="columnNomeCurso" prefWidth="265.0" text="Nome do curso" />
+          <TableColumn fx:id="columnDuracao" minWidth="0.0" prefWidth="257.0" text="Duração do Curso(ANOS)" />
+        </columns>
+      </TableView>
+      <Button layoutX="262.0" layoutY="430.0" mnemonicParsing="false" onAction="#showNovoCurso" style="-fx-background-color: green; -fx-text-fill: white;" text="Cadastrar novo Curso" />
+      <Button layoutX="412.0" layoutY="430.0" mnemonicParsing="false" onAction="#removerCurso" style="-fx-background-color: red; -fx-text-fill: white;" text="Remover Curso" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="506.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.saj.fwads.controller.LoginController">
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="393.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="393.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="506.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+
+    <!-- COLUNA ESQUERDA: IMAGEM COM FUNDO VERDE RESTANTE -->
+    <StackPane style="-fx-background-color: #68a65b;" GridPane.columnIndex="0">
+        <children>
+            <ImageView fitHeight="336.0" fitWidth="337.0" preserveRatio="false">
+                <image>
+                    <Image url="@assets/TESTELOGO1.jpg" />
+                </image>
+            </ImageView>
+        </children>
+    </StackPane>
+
+    <!-- COLUNA DIREITA: LOGIN -->
+    <StackPane GridPane.columnIndex="1">
+        <children>
+            <AnchorPane maxHeight="420.0" maxWidth="325.0" prefHeight="420.0" prefWidth="325.0">
+                <children>
+                    <Label layoutX="39.0" layoutY="53.0" text="Bem vindo!">
+                        <font>
+                            <Font name="System Bold" size="22.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="txUsuario" layoutX="39.0" layoutY="117.0" prefHeight="35.0" prefWidth="245.0" promptText="usuário" stylesheets="@assets/style.css" />
+                    <PasswordField fx:id="txSenha" layoutX="39.0" layoutY="174.0" prefHeight="35.0" prefWidth="245.0" promptText="senha" stylesheets="@assets/style.css" />
+                    <Button cancelButton="true" layoutX="164.0" layoutY="232.0" mnemonicParsing="false" onAction="#limparCampos" prefHeight="35.0" prefWidth="120.0" styleClass="btn-cancelar" stylesheets="@assets/style.css" text="Cancelar" textFill="WHITE">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                    <Button defaultButton="true" layoutX="39.0" layoutY="232.0" mnemonicParsing="false" onAction="#entrar" prefHeight="35.0" prefWidth="120.0" styleClass="btn-login" stylesheets="@assets/style.css" text="Entrar" textFill="WHITE">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                </children>
+            </AnchorPane>
+        </children>
+    </StackPane>
+</GridPane>
