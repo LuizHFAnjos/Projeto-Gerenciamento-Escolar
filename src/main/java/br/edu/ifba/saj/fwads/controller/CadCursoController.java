@@ -12,6 +12,8 @@ import javafx.stage.Stage;
 
 public class CadCursoController {
 
+    //
+
     @FXML private TextField txCurso;
     @FXML private TextField txDuracao;
 

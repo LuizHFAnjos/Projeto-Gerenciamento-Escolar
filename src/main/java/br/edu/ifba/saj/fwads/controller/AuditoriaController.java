@@ -25,6 +25,8 @@ import javafx.util.StringConverter;
 
 public class AuditoriaController {
 
+    //eu adicionei algumas espicificações para fazer o novo projeto
+
     @FXML
     private ChoiceBox<Usuario> chbUsuarios;
 

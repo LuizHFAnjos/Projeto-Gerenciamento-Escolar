@@ -31,6 +31,7 @@ public class CadAlunoController {
 
     @FXML
     private void salvarAluno() {
+        //
         try {
             Usuario usuario = UsuarioService.getUsuarioLogado();
 
